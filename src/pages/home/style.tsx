@@ -67,6 +67,7 @@ export const HeaderButtonsArea = styled(Flex, {
 
 export const UserImage = styled("img", {
   borderRadius: "50%",
+  padding:"4px",
   "@mobile": {
     width: "2.25rem",
     height: "2.25rem",
@@ -142,5 +143,18 @@ export const ProjectAreaWrapperColumns = styled("div", {
   alignItems: "flex-start",
   "@mobile": {
     flexDirection: "column",
+  },
+});
+
+export const Figure = styled("figure", {
+  position: "relative",
+  alignItems: "flex-start",
+  backgroundColor: "$brand1",
+  width: "68px",
+  height: "68px",
+  borderRadius: "35px",
+  "@mobile": {
+    width: "2.25rem",
+    height: "2.25rem",
   },
 });

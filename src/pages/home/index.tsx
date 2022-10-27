@@ -25,6 +25,7 @@ import {
   ProjectsAreaSocialMediaMessage,
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
+  Figure,
 } from "./style";
 
 export const Home = (): JSX.Element => {
@@ -37,13 +38,15 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Flex>
-              <UserImage
-                src={`https://github.com/${userData.githubUser}.png`}
-                alt={userData.nameUser}
-                title={userData.nameUser}
-                width={"48px"}
-                height={"48px"}
-              />
+              <Figure>
+                <UserImage
+                  src={`https://github.com/${userData.githubUser}.png`}
+                  alt={userData.nameUser}
+                  title={userData.nameUser}
+                  width={"68px"}
+                  height={"68px"}
+                />
+              </Figure>
               <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">

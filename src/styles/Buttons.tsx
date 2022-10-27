@@ -18,6 +18,10 @@ export const Button = styled("button", {
   alignItems: "center",
   width: "max-content",
   whiteSpace: "nowrap",
+  "&:hover": {
+    opacity: "0.95",
+    textShadow: "1px 1px 1px violet, 2px 2px 1px violet",
+  },
 
   variants: {
     type: {
